@@ -396,7 +396,7 @@ def run_sweep():
                                       src_tok2idx,
                                       trg_idx2tok,
                                       MAX_LEN)
-            pred_file.write(f"{true_text} -> {pred}\n")
+            pred_file.write(f"{true_text}->{pred}\n")
     
     
     test_loss, test_acc = evaluate(model, test_loader, criterion, PAD_IDX)
